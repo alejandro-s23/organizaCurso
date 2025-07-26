@@ -17,10 +17,10 @@ Ideal para quem está estudando tecnologia, especialmente com foco em DevOps e a
 
 Você fornece o nome do curso como argumento na linha de comando, e o script cria a seguinte estrutura:
 
-📁 Nome-do-Curso/
-├── PDFs/
-├── Resumos/
-└── Pratica/
+📁 Nome-do-Curso/  
+├── PDFs/  
+├── Resumos/  
+└── Pratica/  
 
 ---
 
