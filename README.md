@@ -33,13 +33,13 @@ Você fornece o nome do curso como argumento na linha de comando, e o script cri
 chmod +x criarCurso.sh
 
 ```
-Execute passando o nome do curso entre aspas:
+2. Execute passando o nome do curso entre aspas:
 ```bash
 
 ./criarCurso.sh "Git e GitHub"
 
 ```
-Resultado:
+3. Resultado:
 
 Um diretório chamado Git e GitHub será criado com as subpastas PDFs, Resumos e Pratica.
 
