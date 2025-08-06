@@ -19,6 +19,10 @@
 #
 #   v1.0 26/07/2025, Alejandro:
 #      - Criada a função de criação do diretório *curso* com as subpastas.
+#
+#   v1.0.1 06/08/2025, Alejandro:
+#      - Corrigido erro de variavel inexistente.
+#      - Corrigido erro de grafia no cabeçalho.
 #       
 # ------------------------------------------------------------------------ #
 # Testado em:
