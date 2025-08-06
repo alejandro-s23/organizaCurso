@@ -5,7 +5,6 @@
 # Site:       https://www.linkedin.com/in/alejandro-s-santos
 # Autor:      Alejandro Souza
 # Manutenção: Alejandro Souza
-# Versão: v1.0
 #
 # ------------------------------------------------------------------------ #
 #  Este programa irá auxiliar os usuários na organização de diretórios dos 
@@ -20,10 +19,11 @@
 #
 #   v1.0 26/07/2025, Alejandro:
 #      - Criada a função de criação do diretório *curso* com as subpastas.
+#
 #   v1.1 05/08/2025, Alejandro:
 #      - Adicionado Cabeçalho Sólido no código;
 #      - Adicionado o parâmetro "-h";
-#      - Adicionada a possibilidade de inserir um instituto como diretório raiz
+#      - Adicionada a possibilidade de inserir um instituto como diretório raiz;
 #       
 # ------------------------------------------------------------------------ #
 # Testado em:
