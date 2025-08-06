@@ -1,4 +1,4 @@
-# 🗂️ criarCurso.sh
+# 🗂️ makeCourse.sh
 
 Um mini-projeto simples e útil para aplicar práticas DevOps na sua própria rotina de estudos.
 
