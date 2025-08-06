@@ -18,7 +18,7 @@
 # Histórico:
 #
 #   v1.0 26/07/2025, Alejandro:
-#      - Criada a função de criação do dirétio *curso* com as subpastas.
+#      - Criada a função de criação do diretório *curso* com as subpastas.
 #       
 # ------------------------------------------------------------------------ #
 # Testado em:
@@ -38,7 +38,7 @@ fi
 #Recebe o parâmetro do nome do curso
 curso=$1
 
-echo "Criando os diretórios para o curso $curso na pasta $inst"
+echo "Criando os diretórios para o curso $curso"
 
 mkdir -p "$curso"/{PDFs,Resumos,Pratica}
 
