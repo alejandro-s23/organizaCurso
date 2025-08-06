@@ -1,4 +1,4 @@
-# 🗂️ criarCurso.sh
+# 🗂️ makeCourse.sh
 
 Um mini-projeto simples e útil para aplicar práticas DevOps na sua própria rotina de estudos.
 
@@ -30,13 +30,13 @@ Você fornece o nome do curso como argumento na linha de comando, e o script cri
 
 ```bash
 
-chmod +x criarCurso.sh
+chmod +x makeCourse.sh
 
 ```
 2. Execute passando o nome do curso entre aspas:
 ```bash
 
-./criarCurso.sh "Git e GitHub"
+./makeCourse.sh "Git e GitHub"
 
 ```
 3. Resultado:
