@@ -20,25 +20,46 @@
 #
 #   v1.0 26/07/2025, Alejandro:
 #      - Criada a função de criação do diretório *curso* com as subpastas.
+#   v1.1 05/08/2025, Alejandro:
+#      - Adicionado Cabeçalho Sólido no código;
+#      - Adicionado o parâmetro "-h";
+#      - Adicionada a possibilidade de inserir um instituto como diretório raiz
 #       
 # ------------------------------------------------------------------------ #
 # Testado em:
 #   bash 4.4.19
 # ------------------------------------------------------------------------ #
+# ------------------------------- VARIÁVEIS ----------------------------------------- #
+VERSION="v1.1"
+HELP_MSG="
+  $(basename $0) - [OPÇÕES]
+    prompt base - $0 'Nome do Curso
+
+    -h - Menu de Ajuda
+    -i - Insere uma pasta de Instituto como diretório raiz (Deve ser acompanhado do nome do instituto)
+"
+COURSE_NAME=""
+INST_NAME=""
+PATH_STR="/{PDFs,Resumos,Pratica}"
+
+# ------------------------------------------------------------------------ #
 # ------------------------------- EXECUÇÃO ----------------------------------------- #
 
-if [ -z "$1" ]; then
-	echo "Use: $0 \"Nome Curso\""
-       exit 1
-fi       
+while [[ -n "$1" ]]
+do
+# É um comando?
+  if [[ "$1" = -* ]]; then
+    case "$1" in
+      -h) echo "$HELP_MSG" && exit 0                        ;;
+      -i) shift && INST_NAME="$1/"                          ;;
+      *) echo "Opção Inválida, Digite -h para ajuda." && exit 1 ;;
+    esac
+  else
+    COURSE_NAME="$1"
+  fi
+  shift
+done
 
-#Recebe o parâmetro do nome do curso
-curso=$1
-
-echo "Criando os diretórios para o curso $curso na pasta $inst"
-
-mkdir -p "$curso"/{PDFs,Resumos,Pratica}
-
-echo "Diretório de $curso criada com sucesso!"
+echo "$INST_NAME$COURSE_NAME$PATH_STR"
 
 # ------------------------------------------------------------------------ #
