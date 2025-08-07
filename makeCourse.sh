@@ -20,7 +20,11 @@
 #   v1.0 26/07/2025, Alejandro:
 #      - Criada a função de criação do diretório *curso* com as subpastas.
 #
-#   v1.1 05/08/2025, Alejandro:
+#   v1.0.1 06/08/2025, Alejandro:
+#      - Corrigido erro de variavel inexistente.
+#      - Corrigido erro de grafia no cabeçalho.
+#
+#   v2.0 07/08/2025, Alejandro:
 #      - Adicionado Cabeçalho Sólido no código;
 #      - Adicionado o parâmetro "-h";
 #      - Adicionada a possibilidade de inserir um instituto como diretório raiz;
@@ -40,7 +44,6 @@ HELP_MSG="
 "
 COURSE_NAME=""
 INST_NAME=""
-PATH_STR="/{PDFs,Resumos,Pratica}"
 
 # ------------------------------------------------------------------------ #
 # ------------------------------- EXECUÇÃO ----------------------------------------- #
@@ -60,6 +63,6 @@ do
   shift
 done
 
-echo "$INST_NAME$COURSE_NAME$PATH_STR"
+mkdir -p "$INST_NAME$COURSE_NAME"/{PDFs,Resumos,Pratica}
 
 # ------------------------------------------------------------------------ #
