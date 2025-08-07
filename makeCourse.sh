@@ -34,10 +34,10 @@
 #   bash 4.4.19
 # ------------------------------------------------------------------------ #
 # ------------------------------- VARIÁVEIS ----------------------------------------- #
-VERSION="v1.1"
+VERSION="v2.0"
 HELP_MSG="
   $(basename $0) - [OPÇÕES]
-    prompt base - $0 'Nome do Curso
+    prompt base $VERSION - $0 'Nome do Curso
 
     -h - Menu de Ajuda
     -i - Insere uma pasta de Instituto como diretório raiz (Deve ser acompanhado do nome do instituto)
