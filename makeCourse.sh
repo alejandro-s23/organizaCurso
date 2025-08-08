@@ -29,7 +29,7 @@
 #      - Adicionado o parâmetro "-h";
 #      - Adicionada a possibilidade de inserir um instituto como diretório raiz;
 #
-#   v2.1 07/08/2025, Alejandro:
+#   v2.1 08/08/2025, Alejandro:
 #      - Adicionado parâmetro de debug
 #      - Pequenas mudanças de código sem alteração nas funções
 #       
